@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "img": "https://i.ibb.co.com/nf3YH0r/Virat-Kohli-in-PMO-New-Delhi.jpg",
+    "nationality": "India",
+    "player_position": "Right-hand bat",
+    "playing_style": "Batsman",
+    "price": 2500000,
+    "category": "A+"
+  },
+  {
+    "id": 2,
+    "name": "Kane Williamson",
+    "img": "https://i.ibb.co.com/zQcwQsf/Kane-Williamson-in-2019.jpg",
+    "nationality": "New Zealand",
+    "player_position": "Right-hand bat",
+    "playing_style": "Batsman",
+    "price": 1800000,
+    "category": "A"
+  },
+  {
+    "id": 3,
+    "name": "Ben Stokes",
+    "img": "https://i.ibb.co.com/SDSKQCd/Untitled.jpg",
+    "nationality": "England",
+    "player_position": "Left-hand bat, Right-arm fast-medium",
+    "playing_style": "All-rounder",
+    "price": 3000000,
+    "category": "A+"
+  },
+  {
+    "id": 4,
+    "name": "Rohit Sharma",
+    "img": "https://i.ibb.co.com/PjvsvCq/rohit.jpg",
+    "nationality": "India",
+    "player_position": "Right-hand bat",
+    "playing_style": "Batsman",
+    "price": 2000000,
+    "category": "A+"
+  },
+  {
+    "id": 5,
+    "name": "Pat Cummins",
+    "img": "https://i.ibb.co.com/09Mvz7j/Pat-Cummins-fielding-Ashes-2021-cropped.jpg",
+    "nationality": "Australia",
+    "player_position": "Right-arm fast",
+    "playing_style": "Bowler",
+    "price": 1500000,
+    "category": "A"
+  },
+  {
+    "id": 6,
+    "name": "Babar Azam",
+    "img": "https://i.ibb.co.com/FV4f8kD/Babar-Azam.png",
+    "nationality": "Pakistan",
+    "player_position": "Right-hand bat",
+    "playing_style": "Batsman",
+    "price": 2000000,
+    "category": "A+"
+  }
+]
