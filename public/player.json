@@ -58,5 +58,35 @@
     "playing_style": "Batsman",
     "price": 2000000,
     "category": "A+"
+  },
+  {
+    "id": 7,
+    "name": "Mahmudullah Riyadh",
+    "img": "https://i.ibb.co.com/p0LBhyp/mah.jpg",
+    "nationality": "Bangladesh",
+    "player_position": "Right-hand bat, right-arm-spin",
+    "playing_style": "All-rounder",
+    "price": 1200000,
+    "category": "A-"
+  },
+  {
+    "id": 8,
+    "name": "Shakib Al Hasan",
+    "img": "https://i.ibb.co.com/bXWrKY0/shak.jpg",
+    "nationality": "Bangladesh",
+    "player_position": "Left-hand bat, Lef-arm-spin",
+    "playing_style": "All-rounder",
+    "price": 1900000,
+    "category": "A+"
+  },
+  {
+    "id": 9,
+    "name": "Sikandar Raza",
+    "img": "https://i.ibb.co.com/QD560L4/sikan.jpg",
+    "nationality": "Zimbabwe",
+    "player_position": "Right-hand bat, right-arm-spin",
+    "playing_style": "All-rounder",
+    "price": 1100000,
+    "category": "A-"
   }
 ]

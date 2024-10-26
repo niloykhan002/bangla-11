@@ -3,6 +3,8 @@ import Players from "../Players/Players";
 import "./AvailablePlayers.css";
 import PropTypes from "prop-types";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AvailablePlayers = ({ handlePlayers, isActive, coin, setCoin }) => {
   const [players, setPlayers] = useState([]);
@@ -16,15 +18,17 @@ const AvailablePlayers = ({ handlePlayers, isActive, coin, setCoin }) => {
     const soldPlayers = selectedPlayers.find(
       (soldPlayer) => soldPlayer.id == player.id
     );
+
     if (player.price > coin) {
-      alert("Not enough money");
-    } else if (selectedPlayers.length > 6) {
-      alert("No slot left");
+      toast.error("You do not have enough money");
+    } else if (selectedPlayers.length >= 6) {
+      toast.error("All slot full!");
     } else if (soldPlayers) {
-      alert("already signed");
+      toast.error("Already signed!");
     } else {
       setCoin(coin - player.price);
       setSelectedPlayers([...selectedPlayers, player]);
+      toast.success(`${player.name} is sold to you`);
     }
   };
 
@@ -69,6 +73,17 @@ const AvailablePlayers = ({ handlePlayers, isActive, coin, setCoin }) => {
           handlePlayers={handlePlayers}
         ></SelectedPlayers>
       )}
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        limit={1}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        theme="light"
+      />
+      ;
     </div>
   );
 };
