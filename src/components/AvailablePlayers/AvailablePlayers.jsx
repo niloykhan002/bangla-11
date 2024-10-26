@@ -63,7 +63,11 @@ const AvailablePlayers = ({ handlePlayers, isActive, coin, setCoin }) => {
           handleSelectedPlayers={handleSelectedPlayers}
         ></Players>
       ) : (
-        <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+        <SelectedPlayers
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
+          handlePlayers={handlePlayers}
+        ></SelectedPlayers>
       )}
     </div>
   );

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { RiDeleteBin6Line } from "react-icons/ri";
-const SelectedPlayer = ({ player }) => {
-  const { name, img, player_position } = player;
+const SelectedPlayer = ({ player, handleRemovePlayer }) => {
+  const { id, name, img, player_position } = player;
   return (
     <div className="flex justify-between items-center border rounded-lg p-5">
       <div className="flex gap-3 items-center">
@@ -16,7 +16,7 @@ const SelectedPlayer = ({ player }) => {
         </div>
       </div>
       <div>
-        <button className="text-red-600">
+        <button onClick={() => handleRemovePlayer(id)} className="text-red-600">
           <RiDeleteBin6Line />
         </button>
       </div>
@@ -26,6 +26,7 @@ const SelectedPlayer = ({ player }) => {
 
 SelectedPlayer.propTypes = {
   player: PropTypes.object.isRequired,
+  handleRemovePlayer: PropTypes.func.isRequired,
 };
 
 export default SelectedPlayer;
