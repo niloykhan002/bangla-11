@@ -1,9 +1,10 @@
 import banner from "../../assets/img/banner-main.png";
+import "./Banner.css";
 import PropTypes from "prop-types";
 const Banner = ({ handleAddCoin }) => {
   return (
     <div className=" container mx-auto rounded-2xl bg-black mb-12">
-      <div className="bg-banner-bg bg-cover rounded-2xl">
+      <div className="background-image rounded-2xl">
         <div className="flex flex-col gap-8 items-center py-20">
           <img src={banner} alt="" />
           <h2 className="text-white font-bold text-4xl">

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Players = ({ players, handleSelectedPlayers }) => {
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="grid grid-cols-3 gap-5 mb-56">
       {players.map((player) => (
         <Player
           key={player.id}

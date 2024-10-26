@@ -31,7 +31,7 @@ const AvailablePlayers = ({ handlePlayers, isActive, coin, setCoin }) => {
           <h2 className="font-bold text-3xl">
             {isActive.isActive
               ? `Available Players (${players.length})`
-              : "Selected Players ()"}
+              : `Selected Players (${selectedPlayers.length}/${players.length})`}
           </h2>
         </div>
         <div className="border rounded-2xl">
@@ -49,15 +49,18 @@ const AvailablePlayers = ({ handlePlayers, isActive, coin, setCoin }) => {
               isActive.isActive ? "py-4 px-8 text-gray-600" : "active"
             }`}
           >
-            Selected (0)
+            Selected {`(${selectedPlayers.length})`}
           </button>
         </div>
       </div>
-      <Players
-        players={players}
-        handleSelectedPlayers={handleSelectedPlayers}
-      ></Players>
-      <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+      {isActive.isActive ? (
+        <Players
+          players={players}
+          handleSelectedPlayers={handleSelectedPlayers}
+        ></Players>
+      ) : (
+        <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+      )}
     </div>
   );
 };

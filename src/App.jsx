@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [coin, setCoin] = useState(0);
@@ -30,6 +31,7 @@ function App() {
         handlePlayers={handlePlayers}
         isActive={isActive}
       ></AvailablePlayers>
+      <Footer></Footer>
     </>
   );
 }
