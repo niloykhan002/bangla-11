@@ -1,8 +1,21 @@
-# React + Vite
+# Bangla 11
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Short and Sweet:
 
-Currently, two official plugins are available:
+- Your ultimate fantasy cricket platform.
+- Create your dream team and win big.
+- Play fantasy cricket, anytime, anywhere.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Experience the thrill of cricket like never before. Create your dream team, compete with other fantasy cricket enthusiasts, and win exciting prizes.
+
+## Technology Used:
+
+- react
+- tailwind css
+- Js-ES6
+
+## Key Features
+
+- Toggle between available and selected button
+- React Toastify
+- Choose player to select
