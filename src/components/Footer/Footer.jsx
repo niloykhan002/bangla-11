@@ -4,11 +4,11 @@ import Subscribe from "../Subscribe/Subscribe";
 const Footer = () => {
   return (
     <div className="bg-black">
-      <div className="container mx-auto relative">
-        <div className="absolute z-10 -top-40 container mx-auto">
+      <div className="relative container mx-auto">
+        <div className="absolute z-10 -top-36 container mx-auto">
           <Subscribe></Subscribe>
         </div>
-        <div className="flex flex-col items-center pt-48 pb-20">
+        <div className="flex flex-col items-center pt-56 pb-20">
           <div>
             <img src={logo} alt="" />
           </div>

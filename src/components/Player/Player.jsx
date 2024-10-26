@@ -45,7 +45,7 @@ const Player = ({ player, handleSelectedPlayers }) => {
         <p>Price: {price}</p>
         <button
           onClick={() => handleSelectedPlayers(player)}
-          className="py-2 px-4 rounded-lg bg-gray-100"
+          className="py-2 px-4 rounded-lg bg-green-100 border border-green-700 hover:bg-green-700 hover:text-white"
         >
           Choose Player
         </button>

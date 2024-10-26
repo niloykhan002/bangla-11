@@ -16,8 +16,12 @@ const AvailablePlayers = ({ handlePlayers, isActive, coin, setCoin }) => {
     const soldPlayers = selectedPlayers.find(
       (soldPlayer) => soldPlayer.id == player.id
     );
-    if (player.price > coin || soldPlayers) {
-      alert("You Cannot Sign");
+    if (player.price > coin) {
+      alert("Not enough money");
+    } else if (selectedPlayers.length > 6) {
+      alert("No slot left");
+    } else if (soldPlayers) {
+      alert("already signed");
     } else {
       setCoin(coin - player.price);
       setSelectedPlayers([...selectedPlayers, player]);
