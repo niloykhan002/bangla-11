@@ -19,3 +19,7 @@ Experience the thrill of cricket like never before. Create your dream team, comp
 - Toggle between available and selected button
 - React Toastify
 - Choose player to select
+
+## Live Link:
+
+- https://dapper-baklava-3e1bb9.netlify.app/
